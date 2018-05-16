@@ -14,6 +14,8 @@
 		E9CE928820ACC07B0056092C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CE928720ACC07B0056092C /* Assets.xcassets */; };
 		E9CE928B20ACC07B0056092C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CE928920ACC07B0056092C /* LaunchScreen.storyboard */; };
 		E9CE929620ACC07B0056092C /* iTunesStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE929520ACC07B0056092C /* iTunesStoreTests.swift */; };
+		E9CE92A120ACC1F20056092C /* NetworkingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92A020ACC1F20056092C /* NetworkingStack.swift */; };
+		E9CE92A320ACC2110056092C /* iTunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92A220ACC2110056092C /* iTunesApi.swift */; };
 		F80552CB773F638D53288485 /* Pods_iTunesStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3358A0EC09F8FE5987AB04 /* Pods_iTunesStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		E9CE929120ACC07B0056092C /* iTunesStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CE929520ACC07B0056092C /* iTunesStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesStoreTests.swift; sourceTree = "<group>"; };
 		E9CE929720ACC07B0056092C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CE92A020ACC1F20056092C /* NetworkingStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingStack.swift; sourceTree = "<group>"; };
+		E9CE92A220ACC2110056092C /* iTunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				E9CE928720ACC07B0056092C /* Assets.xcassets */,
 				E9CE928920ACC07B0056092C /* LaunchScreen.storyboard */,
 				E9CE928C20ACC07B0056092C /* Info.plist */,
+				E9CE92A220ACC2110056092C /* iTunesApi.swift */,
+				E9CE92A020ACC1F20056092C /* NetworkingStack.swift */,
 			);
 			path = iTunesStore;
 			sourceTree = "<group>";
@@ -293,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CE92A320ACC2110056092C /* iTunesApi.swift in Sources */,
 				E9CE928320ACC0780056092C /* ViewController.swift in Sources */,
+				E9CE92A120ACC1F20056092C /* NetworkingStack.swift in Sources */,
 				E9CE928120ACC0780056092C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +466,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U3L6K9JA6;
 				INFOPLIST_FILE = iTunesStore/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.linniergames.iTunesStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -474,7 +485,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U3L6K9JA6;
 				INFOPLIST_FILE = iTunesStore/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.linniergames.iTunesStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -491,7 +505,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U3L6K9JA6;
 				INFOPLIST_FILE = iTunesStoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.linniergames.iTunesStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -509,7 +527,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U3L6K9JA6;
 				INFOPLIST_FILE = iTunesStoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.linniergames.iTunesStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
