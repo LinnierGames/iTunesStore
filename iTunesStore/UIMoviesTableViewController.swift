@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UIMoviesTableViewController.swift
 //  iTunesStore
 //
 //  Created by Erick Sanchez on 5/16/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MoviesTableViewController: UITableViewController {
     
     // MARK: - RETURN VALUES
     
@@ -17,5 +17,11 @@ class ViewController: UIViewController {
     // MARK: - IBACTIONS
     
     // MARK: - LIFE CYCLE
-}
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = "Top Movies"
+    }
 
+}

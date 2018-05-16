@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		D5662E2C130EDD10EE19BF29 /* Pods_iTunesStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5710401A4DFB5CEA2A9E8A9 /* Pods_iTunesStoreTests.framework */; };
 		E9CE928120ACC0780056092C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE928020ACC0780056092C /* AppDelegate.swift */; };
-		E9CE928320ACC0780056092C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE928220ACC0780056092C /* ViewController.swift */; };
-		E9CE928620ACC0790056092C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CE928420ACC0790056092C /* Main.storyboard */; };
 		E9CE928820ACC07B0056092C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CE928720ACC07B0056092C /* Assets.xcassets */; };
 		E9CE928B20ACC07B0056092C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CE928920ACC07B0056092C /* LaunchScreen.storyboard */; };
 		E9CE929620ACC07B0056092C /* iTunesStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE929520ACC07B0056092C /* iTunesStoreTests.swift */; };
 		E9CE92A120ACC1F20056092C /* NetworkingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92A020ACC1F20056092C /* NetworkingStack.swift */; };
 		E9CE92A320ACC2110056092C /* iTunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92A220ACC2110056092C /* iTunesApi.swift */; };
 		E9CE92A520ACC6470056092C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92A420ACC6470056092C /* Movie.swift */; };
+		E9CE92CE20ACF4F70056092C /* UIMoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92CD20ACF4F70056092C /* UIMoviesTableViewController.swift */; };
 		F80552CB773F638D53288485 /* Pods_iTunesStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3358A0EC09F8FE5987AB04 /* Pods_iTunesStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +38,6 @@
 		D5710401A4DFB5CEA2A9E8A9 /* Pods_iTunesStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CE927D20ACC0780056092C /* iTunesStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CE928020ACC0780056092C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9CE928220ACC0780056092C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9CE928520ACC0790056092C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9CE928720ACC07B0056092C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9CE928A20ACC07B0056092C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9CE928C20ACC07B0056092C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +47,7 @@
 		E9CE92A020ACC1F20056092C /* NetworkingStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingStack.swift; sourceTree = "<group>"; };
 		E9CE92A220ACC2110056092C /* iTunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesApi.swift; sourceTree = "<group>"; };
 		E9CE92A420ACC6470056092C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E9CE92CD20ACF4F70056092C /* UIMoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMoviesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,8 +153,7 @@
 		E9CE92AD20ACD30C0056092C /* Screen Hierarchy */ = {
 			isa = PBXGroup;
 			children = (
-				E9CE928220ACC0780056092C /* ViewController.swift */,
-				E9CE928420ACC0790056092C /* Main.storyboard */,
+				E9CE92CD20ACF4F70056092C /* UIMoviesTableViewController.swift */,
 			);
 			name = "Screen Hierarchy";
 			sourceTree = "<group>";
@@ -255,7 +252,6 @@
 			files = (
 				E9CE928B20ACC07B0056092C /* LaunchScreen.storyboard in Resources */,
 				E9CE928820ACC07B0056092C /* Assets.xcassets in Resources */,
-				E9CE928620ACC0790056092C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +333,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9CE92A320ACC2110056092C /* iTunesApi.swift in Sources */,
-				E9CE928320ACC0780056092C /* ViewController.swift in Sources */,
 				E9CE92A120ACC1F20056092C /* NetworkingStack.swift in Sources */,
+				E9CE92CE20ACF4F70056092C /* UIMoviesTableViewController.swift in Sources */,
 				E9CE928120ACC0780056092C /* AppDelegate.swift in Sources */,
 				E9CE92A520ACC6470056092C /* Movie.swift in Sources */,
 			);
@@ -363,14 +359,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E9CE928420ACC0790056092C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E9CE928520ACC0790056092C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E9CE928920ACC07B0056092C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
