@@ -13,6 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let net = NetworkingStack()
+        net.topMoves { (result) in
+            switch result {
+            case .success(let movies):
+                print(movies)
+            case .failure(let err):
+                print(err.localizedDescription)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,6 +7,9 @@ target 'iTunesStore' do
 
   # Network abstraction layer written in Swift
   pod 'Moya'
+  
+  #
+  pod 'SwiftyJSON'
 
   target 'iTunesStoreTests' do
     inherit! :search_paths
