@@ -115,10 +115,10 @@
 		E9CE927F20ACC0780056092C /* iTunesStore */ = {
 			isa = PBXGroup;
 			children = (
-				E9CE92A820ACD1930056092C /* Controllers */,
-				E9CE92A920ACD1980056092C /* Screen Hierarchy */,
-				E9CE92A720ACD17F0056092C /* Supporting Files */,
-				E9CE92A620ACD1720056092C /* Networking */,
+				E9CE92AE20ACD31A0056092C /* Controllers */,
+				E9CE92AD20ACD30C0056092C /* Screen Hierarchy */,
+				E9CE92AC20ACD2FC0056092C /* Supporting Files */,
+				E9CE92AB20ACD2ED0056092C /* Networking */,
 			);
 			path = iTunesStore;
 			sourceTree = "<group>";
@@ -132,17 +132,17 @@
 			path = iTunesStoreTests;
 			sourceTree = "<group>";
 		};
-		E9CE92A620ACD1720056092C /* Networking */ = {
+		E9CE92AB20ACD2ED0056092C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				E9CE92A420ACC6470056092C /* Movie.swift */,
 				E9CE92A220ACC2110056092C /* iTunesApi.swift */,
 				E9CE92A020ACC1F20056092C /* NetworkingStack.swift */,
 			);
-			path = Networking;
+			name = Networking;
 			sourceTree = "<group>";
 		};
-		E9CE92A720ACD17F0056092C /* Supporting Files */ = {
+		E9CE92AC20ACD2FC0056092C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				E9CE928720ACC07B0056092C /* Assets.xcassets */,
@@ -150,25 +150,23 @@
 				E9CE928C20ACC07B0056092C /* Info.plist */,
 			);
 			name = "Supporting Files";
-			path = ..;
 			sourceTree = "<group>";
 		};
-		E9CE92A820ACD1930056092C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				E9CE928020ACC0780056092C /* AppDelegate.swift */,
-			);
-			name = Controllers;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		E9CE92A920ACD1980056092C /* Screen Hierarchy */ = {
+		E9CE92AD20ACD30C0056092C /* Screen Hierarchy */ = {
 			isa = PBXGroup;
 			children = (
 				E9CE928220ACC0780056092C /* ViewController.swift */,
 				E9CE928420ACC0790056092C /* Main.storyboard */,
 			);
-			path = "Screen Hierarchy";
+			name = "Screen Hierarchy";
+			sourceTree = "<group>";
+		};
+		E9CE92AE20ACD31A0056092C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9CE928020ACC0780056092C /* AppDelegate.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
