@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5662E2C130EDD10EE19BF29 /* Pods_iTunesStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5710401A4DFB5CEA2A9E8A9 /* Pods_iTunesStoreTests.framework */; };
 		E9CE928120ACC0780056092C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE928020ACC0780056092C /* AppDelegate.swift */; };
 		E9CE928320ACC0780056092C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE928220ACC0780056092C /* ViewController.swift */; };
 		E9CE928620ACC0790056092C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CE928420ACC0790056092C /* Main.storyboard */; };
 		E9CE928820ACC07B0056092C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CE928720ACC07B0056092C /* Assets.xcassets */; };
 		E9CE928B20ACC07B0056092C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CE928920ACC07B0056092C /* LaunchScreen.storyboard */; };
 		E9CE929620ACC07B0056092C /* iTunesStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE929520ACC07B0056092C /* iTunesStoreTests.swift */; };
+		F80552CB773F638D53288485 /* Pods_iTunesStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3358A0EC09F8FE5987AB04 /* Pods_iTunesStore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		604AAA7736C1C69A0C85EA33 /* Pods-iTunesStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesStoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesStoreTests/Pods-iTunesStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		85859DE9441C0EE87BC6CABE /* Pods-iTunesStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesStoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesStoreTests/Pods-iTunesStoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		872B8D5694067AC9C2AB40A3 /* Pods-iTunesStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesStore/Pods-iTunesStore.debug.xcconfig"; sourceTree = "<group>"; };
+		CAD666D97274A2BBBD79F0B8 /* Pods-iTunesStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesStore/Pods-iTunesStore.release.xcconfig"; sourceTree = "<group>"; };
+		CB3358A0EC09F8FE5987AB04 /* Pods_iTunesStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5710401A4DFB5CEA2A9E8A9 /* Pods_iTunesStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CE927D20ACC0780056092C /* iTunesStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CE928020ACC0780056092C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9CE928220ACC0780056092C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F80552CB773F638D53288485 /* Pods_iTunesStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5662E2C130EDD10EE19BF29 /* Pods_iTunesStoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B53D91D4D60889797194DA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB3358A0EC09F8FE5987AB04 /* Pods_iTunesStore.framework */,
+				D5710401A4DFB5CEA2A9E8A9 /* Pods_iTunesStoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A52232C22AFB2C75510A13D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				872B8D5694067AC9C2AB40A3 /* Pods-iTunesStore.debug.xcconfig */,
+				CAD666D97274A2BBBD79F0B8 /* Pods-iTunesStore.release.xcconfig */,
+				604AAA7736C1C69A0C85EA33 /* Pods-iTunesStoreTests.debug.xcconfig */,
+				85859DE9441C0EE87BC6CABE /* Pods-iTunesStoreTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E9CE927420ACC0780056092C = {
 			isa = PBXGroup;
 			children = (
 				E9CE927F20ACC0780056092C /* iTunesStore */,
 				E9CE929420ACC07B0056092C /* iTunesStoreTests */,
 				E9CE927E20ACC0780056092C /* Products */,
+				A52232C22AFB2C75510A13D9 /* Pods */,
+				9B53D91D4D60889797194DA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9CE929A20ACC07B0056092C /* Build configuration list for PBXNativeTarget "iTunesStore" */;
 			buildPhases = (
+				3E69F0DE709041EA92941742 /* [CP] Check Pods Manifest.lock */,
 				E9CE927920ACC0780056092C /* Sources */,
 				E9CE927A20ACC0780056092C /* Frameworks */,
 				E9CE927B20ACC0780056092C /* Resources */,
+				7E6B5AB525C74C18A736B11C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9CE929D20ACC07B0056092C /* Build configuration list for PBXNativeTarget "iTunesStoreTests" */;
 			buildPhases = (
+				AD2626D426EAD3CA495C1F47 /* [CP] Check Pods Manifest.lock */,
 				E9CE928D20ACC07B0056092C /* Sources */,
 				E9CE928E20ACC07B0056092C /* Frameworks */,
 				E9CE928F20ACC07B0056092C /* Resources */,
@@ -191,6 +226,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E69F0DE709041EA92941742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunesStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6B5AB525C74C18A736B11C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTunesStore/Pods-iTunesStore-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTunesStore/Pods-iTunesStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD2626D426EAD3CA495C1F47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunesStoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9CE927920ACC0780056092C /* Sources */ = {
@@ -356,15 +452,13 @@
 		};
 		E9CE929B20ACC07B0056092C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 872B8D5694067AC9C2AB40A3 /* Pods-iTunesStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U3L6K9JA6;
 				INFOPLIST_FILE = iTunesStore/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linniergames.iTunesStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -374,15 +468,13 @@
 		};
 		E9CE929C20ACC07B0056092C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAD666D97274A2BBBD79F0B8 /* Pods-iTunesStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U3L6K9JA6;
 				INFOPLIST_FILE = iTunesStore/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linniergames.iTunesStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -392,17 +484,14 @@
 		};
 		E9CE929E20ACC07B0056092C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 604AAA7736C1C69A0C85EA33 /* Pods-iTunesStoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U3L6K9JA6;
 				INFOPLIST_FILE = iTunesStoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linniergames.iTunesStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -413,17 +502,14 @@
 		};
 		E9CE929F20ACC07B0056092C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85859DE9441C0EE87BC6CABE /* Pods-iTunesStoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U3L6K9JA6;
 				INFOPLIST_FILE = iTunesStoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linniergames.iTunesStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
