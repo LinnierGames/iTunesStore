@@ -57,6 +57,8 @@ class MovieDetailViewController: UIViewController {
                 unwrappedSelf.buttonShare.tintColor = contrastingColor
                 
                 unwrappedSelf.buttonBack.tintColor = contrastingColor
+                
+                unwrappedSelf.setStatusBarStyle(from: contrastingColor)
             })
         }
         

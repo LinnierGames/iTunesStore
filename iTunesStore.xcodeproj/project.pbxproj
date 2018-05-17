@@ -13,6 +13,7 @@
 		E97849A120AD239E001A70C1 /* UIDesignables.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E978499D20AD2390001A70C1 /* UIDesignables.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E97849A720AD244C001A70C1 /* UIBootton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97849A520AD244C001A70C1 /* UIBootton.swift */; };
 		E97849A820AD244C001A70C1 /* UIDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97849A620AD244C001A70C1 /* UIDesignable.swift */; };
+		E97849AA20AD2F4A001A70C1 /* UIViewController+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97849A920AD2F4A001A70C1 /* UIViewController+UIColor.swift */; };
 		E9BDC14820AD159A00D54326 /* DateFormatterToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BDC14720AD159A00D54326 /* DateFormatterToken.swift */; };
 		E9CE928120ACC0780056092C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE928020ACC0780056092C /* AppDelegate.swift */; };
 		E9CE928820ACC07B0056092C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CE928720ACC07B0056092C /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		E978499720AD2390001A70C1 /* UIDesignables.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIDesignables.xcodeproj; path = "../../../Frameworks n Libraries/UIDesignables/UIDesignables/UIDesignables.xcodeproj"; sourceTree = "<group>"; };
 		E97849A520AD244C001A70C1 /* UIBootton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIBootton.swift; path = "../../../Frameworks n Libraries/UIDesignables/UIDesignables/UIDesignables/UIBootton.swift"; sourceTree = "<group>"; };
 		E97849A620AD244C001A70C1 /* UIDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDesignable.swift; path = "../../../Frameworks n Libraries/UIDesignables/UIDesignables/UIDesignables/UIDesignable.swift"; sourceTree = "<group>"; };
+		E97849A920AD2F4A001A70C1 /* UIViewController+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIColor.swift"; sourceTree = "<group>"; };
 		E9BDC14720AD159A00D54326 /* DateFormatterToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterToken.swift; sourceTree = "<group>"; };
 		E9CE927D20ACC0780056092C /* iTunesStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CE928020ACC0780056092C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,7 +157,6 @@
 		E9BDC14A20AD16FE00D54326 /* UICustom */ = {
 			isa = PBXGroup;
 			children = (
-				E9BDC14720AD159A00D54326 /* DateFormatterToken.swift */,
 				E978498820AD1735001A70C1 /* HeaderImageView.swift */,
 				E97849A620AD244C001A70C1 /* UIDesignable.swift */,
 				E97849A520AD244C001A70C1 /* UIBootton.swift */,
@@ -217,6 +218,8 @@
 		E9CE92AC20ACD2FC0056092C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E9BDC14720AD159A00D54326 /* DateFormatterToken.swift */,
+				E97849A920AD2F4A001A70C1 /* UIViewController+UIColor.swift */,
 				E9CE928720ACC07B0056092C /* Assets.xcassets */,
 				E9CE928920ACC07B0056092C /* LaunchScreen.storyboard */,
 				E9CE928C20ACC07B0056092C /* Info.plist */,
@@ -446,6 +449,7 @@
 				E9CE92D020ACF5870056092C /* MovieTableViewCell.swift in Sources */,
 				E9CE92CE20ACF4F70056092C /* MoviesTableViewController.swift in Sources */,
 				E97849A720AD244C001A70C1 /* UIBootton.swift in Sources */,
+				E97849AA20AD2F4A001A70C1 /* UIViewController+UIColor.swift in Sources */,
 				E9CE92D320AD075B0056092C /* MovieDetailViewController.swift in Sources */,
 				E97849A820AD244C001A70C1 /* UIDesignable.swift in Sources */,
 				E9CE928120ACC0780056092C /* AppDelegate.swift in Sources */,

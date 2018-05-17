@@ -35,7 +35,10 @@ class MovieTableViewCell: UITableViewCell {
     func configure(_ movie: Movie) {
         titleLabel.text = movie.title
         priceLabel.text = movie.price
-        releaseDateLabel.text = String(describing: movie.releaseDate)
+        let formattedDateString = movie.releaseDate.formattedStringWith(
+            .Month_shorthand, " ", .Year_noPadding
+        )
+        releaseDateLabel.text = formattedDateString
     }
     
     private func initLayout() {

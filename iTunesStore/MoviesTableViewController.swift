@@ -63,6 +63,7 @@ class MoviesTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         self.navigationController!.setNavigationBarHidden(false, animated: true)
+        self.navigationController!.navigationBar.prefersLargeTitles = true
         
         network.topMoves { (result) in
             switch result {
