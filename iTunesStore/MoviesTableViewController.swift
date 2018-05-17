@@ -55,6 +55,7 @@ class MoviesTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.title = "Top Movies"
+        self.navigationController!.navigationBar.barTintColor = .orange
         
         tableView.register(MovieTableViewCell.self, forCellReuseIdentifier: "movie cell")
     }
