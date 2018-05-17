@@ -50,9 +50,12 @@
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6un-nM-mU7">
                                             <rect key="frame" x="0.0" y="20.5" width="343" height="334.5"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
 
-Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+
+
+Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
@@ -76,9 +79,8 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkg-cd-YSs">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkg-cd-YSs">
                     <rect key="frame" x="16" y="20" width="34" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Back"/>
                     <connections>
                         <action selector="pressBack:" destination="-1" eventType="touchUpInside" id="tRR-w2-Hue"/>
@@ -112,17 +114,19 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Kkg-cd-YSs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="73U-ek-ry8"/>
                 <constraint firstItem="44O-6c-Sl3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="F6N-qi-gXD"/>
-                <constraint firstItem="44O-6c-Sl3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GSD-YA-68u"/>
+                <constraint firstItem="44O-6c-Sl3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GSD-YA-68u"/>
                 <constraint firstAttribute="trailing" secondItem="44O-6c-Sl3" secondAttribute="trailing" id="KEj-f3-rO0"/>
                 <constraint firstItem="7O6-HT-zzC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="UGl-uc-Vy6"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vUp-XQ-jtO" secondAttribute="trailing" constant="16" id="Ub5-9E-m3Y"/>
                 <constraint firstItem="vUp-XQ-jtO" firstAttribute="top" secondItem="7O6-HT-zzC" secondAttribute="bottom" constant="16" id="cf5-Iw-Ybo"/>
                 <constraint firstItem="vUp-XQ-jtO" firstAttribute="top" secondItem="1hi-Qk-Xac" secondAttribute="bottom" constant="-16" id="fSP-Cq-ffu"/>
                 <constraint firstItem="Zbt-Dr-lo6" firstAttribute="top" secondItem="vUp-XQ-jtO" secondAttribute="bottom" constant="16" id="gB7-t5-d77"/>
+                <constraint firstItem="Kkg-cd-YSs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gji-fs-9xk"/>
                 <constraint firstItem="vUp-XQ-jtO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="laS-ii-Bcc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7O6-HT-zzC" secondAttribute="trailing" constant="16" id="pyY-OX-ai9"/>
-                <constraint firstAttribute="bottom" secondItem="44O-6c-Sl3" secondAttribute="bottom" id="uDi-Kt-v2V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="44O-6c-Sl3" secondAttribute="bottom" id="uDi-Kt-v2V"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
