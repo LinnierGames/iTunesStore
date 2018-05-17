@@ -26,11 +26,25 @@ struct Movie: Decodable, CustomStringConvertible {
     var price: String {
         return self._price.label
     }
+    private enum Images: Int {
+        case Thumbnail
+        case Thumbnail2
+        case Comp
+    }
+    private var _image: [Label<URL>]
+    var thumbnailUrl: URL {
+        return self._image[Images.Thumbnail.rawValue].label
+    }
+    
+    var compUrl: URL {
+        return self._image[Images.Comp.rawValue].label
+    }
     
     enum CodingKeys: String, CodingKey {
         case _title = "im:name"
         case _releaseDate = "im:releaseDate"
         case _price = "im:price"
+        case _image = "im:image"
     }
     
     private struct Label<T>: Decodable where T: Decodable {

@@ -10,6 +10,9 @@ target 'iTunesStore' do
   
   #
   pod 'SwiftyJSON'
+  
+  #
+  pod 'Kingfisher'
 
   target 'iTunesStoreTests' do
     inherit! :search_paths

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieDetailViewController: UIViewController {
     
@@ -27,7 +28,11 @@ class MovieDetailViewController: UIViewController {
     // MARK: - VOID METHODS
     
     private func updateUI() {
+        guard self.movie != nil else {
+            fatalError("movie was not set by a parent view controller")
+        }
         
+        imageHeadline.kf.setImage(with: movie.compUrl)
     }
     
     // MARK: - IBACTIONS
@@ -37,22 +42,26 @@ class MovieDetailViewController: UIViewController {
     
     @IBOutlet weak var buttonPrice: UIButton!
     @IBAction func pressBuyOniTunes(_ sender: Any) {
+        
     }
     
     @IBAction func pressShare(_ sender: Any) {
+        
     }
     
     @IBOutlet weak var labelReleaseDate: UILabel!
     
     @IBAction func pressBack(_ sender: Any) {
-        
+        self.navigationController!.popViewController(animated: true)
     }
+    
     // MARK: - LIFE CYCLE
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.updateUI()
+        
+        self.navigationController!.setNavigationBarHidden(true, animated: false)
     }
-
 }
