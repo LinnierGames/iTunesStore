@@ -40,6 +40,13 @@ class MoviesTableViewController: UITableViewController {
     
     // MARK: - VOID METHODS
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedMovie = self.movies[indexPath.row]
+        let detailedVc = MovieDetailViewController(movie: selectedMovie)
+        
+        self.navigationController!.pushViewController(detailedVc, animated: true)
+    }
+    
     // MARK: - IBACTIONS
     
     // MARK: - LIFE CYCLE

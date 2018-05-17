@@ -15,8 +15,10 @@
 		E9CE92A120ACC1F20056092C /* NetworkingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92A020ACC1F20056092C /* NetworkingStack.swift */; };
 		E9CE92A320ACC2110056092C /* iTunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92A220ACC2110056092C /* iTunesApi.swift */; };
 		E9CE92A520ACC6470056092C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92A420ACC6470056092C /* Movie.swift */; };
-		E9CE92CE20ACF4F70056092C /* UIMoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92CD20ACF4F70056092C /* UIMoviesTableViewController.swift */; };
+		E9CE92CE20ACF4F70056092C /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92CD20ACF4F70056092C /* MoviesTableViewController.swift */; };
 		E9CE92D020ACF5870056092C /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92CF20ACF5870056092C /* MovieTableViewCell.swift */; };
+		E9CE92D320AD075B0056092C /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92D120AD075B0056092C /* MovieDetailViewController.swift */; };
+		E9CE92D420AD075B0056092C /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CE92D220AD075B0056092C /* MovieDetailViewController.xib */; };
 		F80552CB773F638D53288485 /* Pods_iTunesStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3358A0EC09F8FE5987AB04 /* Pods_iTunesStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +50,10 @@
 		E9CE92A020ACC1F20056092C /* NetworkingStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingStack.swift; sourceTree = "<group>"; };
 		E9CE92A220ACC2110056092C /* iTunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesApi.swift; sourceTree = "<group>"; };
 		E9CE92A420ACC6470056092C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		E9CE92CD20ACF4F70056092C /* UIMoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMoviesTableViewController.swift; sourceTree = "<group>"; };
+		E9CE92CD20ACF4F70056092C /* MoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
 		E9CE92CF20ACF5870056092C /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		E9CE92D120AD075B0056092C /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		E9CE92D220AD075B0056092C /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,8 +159,10 @@
 		E9CE92AD20ACD30C0056092C /* Screen Hierarchy */ = {
 			isa = PBXGroup;
 			children = (
-				E9CE92CD20ACF4F70056092C /* UIMoviesTableViewController.swift */,
+				E9CE92CD20ACF4F70056092C /* MoviesTableViewController.swift */,
 				E9CE92CF20ACF5870056092C /* MovieTableViewCell.swift */,
+				E9CE92D120AD075B0056092C /* MovieDetailViewController.swift */,
+				E9CE92D220AD075B0056092C /* MovieDetailViewController.xib */,
 			);
 			name = "Screen Hierarchy";
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CE92D420AD075B0056092C /* MovieDetailViewController.xib in Resources */,
 				E9CE928B20ACC07B0056092C /* LaunchScreen.storyboard in Resources */,
 				E9CE928820ACC07B0056092C /* Assets.xcassets in Resources */,
 			);
@@ -338,7 +345,8 @@
 				E9CE92A320ACC2110056092C /* iTunesApi.swift in Sources */,
 				E9CE92A120ACC1F20056092C /* NetworkingStack.swift in Sources */,
 				E9CE92D020ACF5870056092C /* MovieTableViewCell.swift in Sources */,
-				E9CE92CE20ACF4F70056092C /* UIMoviesTableViewController.swift in Sources */,
+				E9CE92CE20ACF4F70056092C /* MoviesTableViewController.swift in Sources */,
+				E9CE92D320AD075B0056092C /* MovieDetailViewController.swift in Sources */,
 				E9CE928120ACC0780056092C /* AppDelegate.swift in Sources */,
 				E9CE92A520ACC6470056092C /* Movie.swift in Sources */,
 			);
