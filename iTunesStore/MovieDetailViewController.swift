@@ -33,6 +33,12 @@ class MovieDetailViewController: UIViewController {
         }
         
         imageHeadline.kf.setImage(with: movie.compUrl)
+        labelTitle.text = movie.title
+        buttonPrice.setTitle(movie.price, for: .normal)
+        let formattedDateString = movie.releaseDate.formattedStringWith(
+            .Month_fullName, " ", .Day_ofTheMonthNoPadding, ", ", .Year_noPadding
+        )
+        labelReleaseDate.text = "Release Date: \(formattedDateString)"
     }
     
     // MARK: - IBACTIONS
