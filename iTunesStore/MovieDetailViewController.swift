@@ -67,7 +67,11 @@ class MovieDetailViewController: UIViewController {
         super.viewDidLoad()
         
         self.updateUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        self.navigationController!.setNavigationBarHidden(true, animated: false)
+        self.navigationController!.setNavigationBarHidden(true, animated: true)
     }
 }

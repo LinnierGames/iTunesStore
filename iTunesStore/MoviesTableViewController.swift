@@ -62,6 +62,8 @@ class MoviesTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.navigationController!.setNavigationBarHidden(false, animated: true)
+        
         network.topMoves { (result) in
             switch result {
             case .success(let movies):
