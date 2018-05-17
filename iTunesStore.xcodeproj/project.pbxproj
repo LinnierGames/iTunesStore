@@ -16,6 +16,7 @@
 		E9CE92A320ACC2110056092C /* iTunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92A220ACC2110056092C /* iTunesApi.swift */; };
 		E9CE92A520ACC6470056092C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92A420ACC6470056092C /* Movie.swift */; };
 		E9CE92CE20ACF4F70056092C /* UIMoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92CD20ACF4F70056092C /* UIMoviesTableViewController.swift */; };
+		E9CE92D020ACF5870056092C /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE92CF20ACF5870056092C /* MovieTableViewCell.swift */; };
 		F80552CB773F638D53288485 /* Pods_iTunesStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3358A0EC09F8FE5987AB04 /* Pods_iTunesStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		E9CE92A220ACC2110056092C /* iTunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesApi.swift; sourceTree = "<group>"; };
 		E9CE92A420ACC6470056092C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E9CE92CD20ACF4F70056092C /* UIMoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMoviesTableViewController.swift; sourceTree = "<group>"; };
+		E9CE92CF20ACF5870056092C /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				E9CE92CD20ACF4F70056092C /* UIMoviesTableViewController.swift */,
+				E9CE92CF20ACF5870056092C /* MovieTableViewCell.swift */,
 			);
 			name = "Screen Hierarchy";
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			files = (
 				E9CE92A320ACC2110056092C /* iTunesApi.swift in Sources */,
 				E9CE92A120ACC1F20056092C /* NetworkingStack.swift in Sources */,
+				E9CE92D020ACF5870056092C /* MovieTableViewCell.swift in Sources */,
 				E9CE92CE20ACF4F70056092C /* UIMoviesTableViewController.swift in Sources */,
 				E9CE928120ACC0780056092C /* AppDelegate.swift in Sources */,
 				E9CE92A520ACC6470056092C /* Movie.swift in Sources */,
