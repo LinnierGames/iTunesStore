@@ -73,7 +73,7 @@ class MovieDetailViewController: UIViewController {
     
     @IBOutlet weak var buttonPrice: UIBootton!
     @IBAction func pressBuyOniTunes(_ sender: Any) {
-        
+        UIApplication.shared.open(movie.storeUrl, options: [:])
     }
     
     @IBOutlet weak var buttonShare: UIBootton!

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 struct Movie: Decodable, CustomStringConvertible {
     
@@ -40,11 +41,23 @@ struct Movie: Decodable, CustomStringConvertible {
         return self._image[Images.Comp.rawValue].label
     }
     
+    private var _storeUrl: JSON
+    var storeUrl: URL {
+        guard
+            let stringUrl = self._storeUrl[0]["attributes"]["href"].string,
+            let url = URL(string: stringUrl) else {
+                fatalError("Failed to decode url from JSON \(self._storeUrl)")
+        }
+        
+        return url
+    }
+    
     enum CodingKeys: String, CodingKey {
         case _title = "im:name"
         case _releaseDate = "im:releaseDate"
         case _price = "im:price"
         case _image = "im:image"
+        case _storeUrl = "link"
     }
     
     private struct Label<T>: Decodable where T: Decodable {
