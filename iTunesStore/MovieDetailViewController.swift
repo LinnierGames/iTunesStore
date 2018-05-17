@@ -32,6 +32,21 @@ class MovieDetailViewController: UIViewController {
     
     // MARK: - IBACTIONS
     
+    @IBOutlet weak var imageHeadline: UIImageView!
+    @IBOutlet weak var labelTitle: UILabel!
+    
+    @IBOutlet weak var buttonPrice: UIButton!
+    @IBAction func pressBuyOniTunes(_ sender: Any) {
+    }
+    
+    @IBAction func pressShare(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var labelReleaseDate: UILabel!
+    
+    @IBAction func pressBack(_ sender: Any) {
+        
+    }
     // MARK: - LIFE CYCLE
     
     override func viewDidLoad() {
