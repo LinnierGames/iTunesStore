@@ -12,11 +12,15 @@ import SwiftyJSON
 struct Movie: Decodable, CustomStringConvertible {
     
     private var _title: Label<String>
+    
+    /** movie title */
     var title: String {
         return self._title.label
     }
     
     private var _releaseDate: Label<String>
+    
+    /** movie release date */
     var releaseDate: Date {
         let dateString = self._releaseDate.label
         
@@ -24,6 +28,8 @@ struct Movie: Decodable, CustomStringConvertible {
     }
     
     private var _price: Label<String>
+    
+    /** movie price */
     var price: String {
         return self._price.label
     }
@@ -33,15 +39,20 @@ struct Movie: Decodable, CustomStringConvertible {
         case Comp
     }
     private var _image: [Label<URL>]
+    
+    /** movie thumb Url */
     var thumbnailUrl: URL {
         return self._image[Images.Thumbnail.rawValue].label
     }
     
+    /** movie header Url */
     var compUrl: URL {
         return self._image[Images.Comp.rawValue].label
     }
     
     private var _storeUrl: JSON
+    
+    /** movie iTunes Url */
     var storeUrl: URL {
         guard
             let stringUrl = self._storeUrl[0]["attributes"]["href"].string,

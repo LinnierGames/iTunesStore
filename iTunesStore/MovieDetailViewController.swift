@@ -70,23 +70,23 @@ class MovieDetailViewController: UIViewController {
     
     // MARK: - IBACTIONS
     
-    @IBOutlet weak var imageHeadline: UIImageView!
-    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet private weak var imageHeadline: UIImageView!
+    @IBOutlet private weak var labelTitle: UILabel!
     
-    @IBOutlet weak var buttonPrice: UIBootton!
-    @IBAction func pressBuyOniTunes(_ sender: Any) {
+    @IBOutlet private weak var buttonPrice: UIBootton!
+    @IBAction private func pressBuyOniTunes(_ sender: Any) {
         UIApplication.shared.open(movie.storeUrl, options: [:])
     }
     
-    @IBOutlet weak var buttonShare: UIBootton!
-    @IBAction func pressShare(_ sender: Any) {
-        
+    @IBOutlet private weak var buttonShare: UIBootton!
+    @IBAction private func pressShare(_ sender: Any) {
+        //TODO: use a UIActivityViewController to present activities to share the store url
     }
     
-    @IBOutlet weak var labelReleaseDate: UILabel!
+    @IBOutlet private weak var labelReleaseDate: UILabel!
     
-    @IBOutlet weak var buttonBack: UIButton!
-    @IBAction func pressBack(_ sender: Any) {
+    @IBOutlet private weak var buttonBack: UIButton!
+    @IBAction private func pressBack(_ sender: Any) {
         self.navigationController!.popViewController(animated: true)
     }
     

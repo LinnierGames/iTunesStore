@@ -35,6 +35,14 @@ struct NetworkingStack {
     
     // MARK: - VOID METHODS
     
+    /**
+     fetch the top 25, or a given limit, of movies
+     
+     - parameter limit: the number of movies to fetch
+     
+     - parameter completion: if the fetch is a success, the call back will return
+     an array of `Movie`s. Otherwise, an `iTunesErrors` will return
+     */
     func topMoves(with limit: Int = 25, completion: @escaping (Result<[Movie], iTunesErrors>) -> Void) {
         provider.request(.TopMovies(limit: limit)) { (result) in
             switch result {
@@ -65,8 +73,4 @@ struct NetworkingStack {
             }
         }
     }
-    
-    // MARK: - IBACTIONS
-    
-    // MARK: - LIFE CYCLE
 }

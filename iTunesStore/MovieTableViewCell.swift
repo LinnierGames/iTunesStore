@@ -32,6 +32,9 @@ class MovieTableViewCell: UITableViewCell {
     
     // MARK: - VOID METHODS
     
+    /**
+     Update the cell, title, price, and release date, using the given movie
+     */
     func configure(_ movie: Movie) {
         titleLabel.text = movie.title
         priceLabel.text = movie.price
