@@ -9,7 +9,6 @@
 import UIKit
 import Kingfisher
 import ChameleonFramework
-import UIDesignables
 
 class MovieDetailViewController: UIViewController {
     
